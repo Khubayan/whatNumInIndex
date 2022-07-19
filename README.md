@@ -10,3 +10,5 @@ This program takes four inputs which is:
   <li>Number index, this is index for number/character that user need to get.</li>
   <li>Max value, after reach this number or passes the max value program will stop increment starting value.</li>
 </ul>
+<h2>Test</h2>
+I do really want you to try it with just by single click <a href="https://whatnuminindex.khubayan.repl.co">here</a> <3.
