@@ -11,4 +11,5 @@ This program takes four inputs which is:
   <li><strong>Max value</strong>, after reach this number or passes the max value program will stop increment starting value.</li>
 </ul>
 <h2>Test</h2>
-I do really want you to try it with just by single click <a href="https://whatnuminindex.khubayan.repl.co" target="_blank">here</a> <3. Output are still prompted on console by the way:/.
+I do really want you to try it with just by single click <a href="https://whatnuminindex.khubayan.repl.co" target="_blank">here</a> <3. <strong>Output are still prompted on console by the way:/.
+</strong>
