@@ -75,7 +75,11 @@
     </footer>
     <script> 
       const year = new Date();
-      document.getElementById("year-time").InnerHTML = `{year.getFullYear()}`;
+      (function ()
+       {
+        document.getElementById("year-time").InnerHTML = `{year.getFullYear()}`;
+       }
+      )();
       function findNumber() {
         let inc, i, limit, numbers, charIndex;
         numbers = parseInt(document.getElementById("starting-number").value); //Start Number & characters storage
