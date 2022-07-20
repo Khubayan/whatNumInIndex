@@ -13,3 +13,6 @@ This program takes four inputs which is:
 <h2>Test</h2>
 I do really want you to try it with just by single click <a href="https://whatnuminindex.khubayan.repl.co" target="_blank">here</a> <3. <strong>Output are still prompted on console by the way:/.
 </strong>
+<h2>Thanks to</h2>
+<hr>
+<a href="https://github.com/ArugaZ" target="blank">ArugaZ</a>
