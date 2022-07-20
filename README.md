@@ -6,7 +6,7 @@ This program is find a spesific char/number based on index that user need to spe
 This program takes four inputs which is:
 <ul>
   <li><strong>Starting Number</strong>, is a first charater/number on a list/array/string.</li>
-  <li><strong>Incrementation</strong>, is a incremtation level.</li>
+  <li><strong>Incrementation</strong>, is a incrementation level.</li>
   <li><strong>Number index</strong>, this is index for number/character that user need to get.</li>
   <li><strong>Max value</strong>, after reach this number or passes the max value program will stop increment starting value.</li>
 </ul>
