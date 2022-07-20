@@ -4,39 +4,86 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>what Num In Index</title>
+    <style>
+      body {
+        margin: 0;  
+        padding: 0;
+        font-family: 'Arial';  
+        background-color: rgb(20, 20, 20);
+      }
+      h2{  
+        text-align: center;  
+        color: #277582;  
+        padding: 20px;  
+      }
+      p {
+        color:#00ffd0;
+      }
+      .container {
+        width: 382px;  
+        overflow: hidden;
+        margin: auto;  
+        padding: 80px;  
+        background: #23463f;
+        border-radius: 15px ; 
+      }
+      label {
+        color: #00aeff;  
+        font-size: 17px;
+      }
+      input {
+        width: 100%;  
+        height: 30px;  
+        border: none;  
+        border-radius: 3px;  
+        padding-left: 8px;
+        margin-bottom: 10px;
+      }
+      input[type="submit"] {
+        margin-top: 10px;
+        width: 100px;
+      }
+    </style>
   </head>
   <body>
-    <label for="starting-number">Starting Number</label>
-    <input type="number" name="starting-muber" id="starting-number" />
-    <label for="incrementation">Incrementation</label>
-    <input type="number" name="incrementation" id="incrementation" />
-    <label for="index-number">Number index</label>
-    <input type="number" name="index-number" id="index-number">
-    <label for="limit">Max value</label>
-    <input type="number" name="limit" id="limit" />
-    <input type="submit" value="Check" onclick="findNumber()" />
+    <h2>what Num In Index</h2>
+    <div class="container">
+      <p id="result"></p>
+      <div>
+        <label for="starting-number">Starting Number</label>
+        <input type="number" name="starting-muber" id="starting-number" />
+      </div>
+      <div>
+        <label for="incrementation">Incrementation</label>
+        <input type="number" name="incrementation" id="incrementation" />
+      </div>
+      <div>
+        <label for="index-number">Number index</label>
+        <input type="number" name="index-number" id="index-number" />
+      </div>
+      <div>
+        <label for="limit">Max value</label>
+        <input type="number" name="limit" id="limit" />
+      </div>
+      <div>
+        <input type="submit" value="Check" onclick="findNumber()" />
+      </div>
+    </div>
     <script>
-      
       function findNumber() {
-        let inc, i, limit, numbers, charIndex;
-        numbers = parseInt(document.getElementById("starting-number").value); //Start Number & characters storage
+        let inc, arr, limit, start, charIndex;
+        start = parseInt(document.getElementById("starting-number").value); //Start Number & characters storage
+        arr = [start]
         inc = parseInt(document.getElementById("incrementation").value); //Increment
         limit = parseInt(document.getElementById("limit").value); //Max value
         charIndex = parseInt(document.getElementById("index-number").value);
-        i = numbers;
-        while (i <= limit - 1) {
-          i += inc;
-          numbers += i.toString();
+        while (start <= limit-1) {
+          start += inc;
+          arr.push(start);
         }
-        console.log(numbers.charAt(charIndex-1));
+        document.querySelector("#result").innerHTML = "Result = " + arr[charIndex-1];
       }
-
-      // let arr = 123;
-      // console.log(Array.from)
-      // let i = 8
-      // let numbers = i.toString()
-      // console.log(numbers)
     </script>
   </body>
 </html>
