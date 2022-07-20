@@ -70,21 +70,12 @@
         <input type="submit" value="Check" onclick="findNumber()" />
       </div>
     </div>
-    <script>
-//       function findNumber() {
-//         let inc, arr, limit, start, charIndex;
-//         start = parseInt(document.getElementById("starting-number").value); //Start Number & characters storage
-//         inc = parseInt(document.getElementById("incrementation").value); //Increment
-//         limit = parseInt(document.getElementById("limit").value); //Max value
-//         charIndex = parseInt(document.getElementById("index-number").value);
-//         while (start <= limit-1) {
-//           start += inc;
-//           arr.push(start);
-//         }
-//         document.querySelector("#result").innerHTML = "Result = " + arr[charIndex-1];
-//       }
-      
-            
+    <footer>
+      <p id="year-time"></p>
+    </footer>
+    <script> 
+      const year = new Date();
+      document.getElementById("year-time").InnerHTML = `{year.getFullYear()}`;
       function findNumber() {
         let inc, i, limit, numbers, charIndex;
         numbers = parseInt(document.getElementById("starting-number").value); //Start Number & characters storage
@@ -97,9 +88,7 @@
           numbers += i.toString();
         }
         document.querySelector("#result").innerHTML = "Result = " + numbers[charIndex-1];
-      }
-      
-      
+      }  
     </script>
   </body>
 </html>
