@@ -15,3 +15,4 @@ I do really want you to try it with just by single click <a href="https://whatnu
 <h2>Thanks to</h2>
 <hr>
 <a href="https://github.com/ArugaZ" target="blank">ArugaZ</a>
+<a href="https://github.com/kaizo-kn" target="blank">Kaizo Kn</a>
